@@ -47,8 +47,8 @@ public class Population implements Comparator<Gnome>{
 		ArrayList<Gnome>new_population=new ArrayList<>();
 		// breed 50% of the population at random
 		for(int i=0;i<max/2;i++) {
-			Gnome husband=array[rand.nextInt(max-1)];
-			Gnome waifu=array[rand.nextInt(max-1)];
+			Gnome husband=array[rand.nextInt(max/2-1)+max/2];
+			Gnome waifu=array[rand.nextInt(max/2-1)+max/2];
 			Gnome child=husband.crossOver(waifu);
 			new_population.add(child);
 			// apply mutation to this kid hopefully he/she will

@@ -41,8 +41,9 @@ public class Gnome {
 	}
 	
 	public void mutate() {
-		genes[rand.nextInt(genes.length-1)]=
-	               pool[rand.nextInt(pool.length-1)];			
+		int g=Math.min(rand.nextInt(genes.length),genes.length-1);
+		int p=Math.min(rand.nextInt(pool.length),pool.length-1);
+		genes[g]=pool[p];			
 	}
 	
 	public Gnome crossOver(Gnome waifu) {

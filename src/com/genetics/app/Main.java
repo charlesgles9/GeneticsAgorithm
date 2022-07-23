@@ -8,7 +8,7 @@ public class Main {
 		StringBuffer buffer=new StringBuffer();
 		buffer.append("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.?&@%*+-");
 		
-		Population population=new Population("I Love Computer Science and Engineering.".toCharArray(),
+		Population population=new Population("I Love Computer Science and Algorithms.".toCharArray(),
 				   200,buffer.toString().toCharArray(),0.5f);
 		boolean run=true;
 		while(run) {
